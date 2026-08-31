@@ -1,5 +1,0 @@
-Angelly_Control
-│
-├── index.html
-├── manifest.json
-└── sw.js
