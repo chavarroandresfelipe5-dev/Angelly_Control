@@ -1,0 +1,110 @@
+<div class="card">
+
+<div class="label">1. ESCRIBE EL CÓDIGO DEL SERVICIO</div>
+
+<input id="code" class="code" type="number" inputmode="numeric" placeholder="Ej. 3">
+
+<div id="serviceName" class="service">Escribe un código</div>
+<div id="servicePrice" class="price"></div>
+<div id="status" class="note"></div>
+
+</div>
+
+<div class="card">
+
+<div class="row">
+
+<div>
+<div class="label">Cliente / referencia</div>
+<input id="client" placeholder="Opcional">
+</div>
+
+<div>
+<div class="label">Cantidad</div>
+<input id="qty" type="number" min="1" value="1">
+</div>
+
+</div>
+
+<div class="result">
+
+<div><span>Valor del servicio</span><b id="gross">$0</b></div>
+<div><span>Descuento 4%</span><b id="discount">$0</b></div>
+<div><span>Después del 4%</span><b id="net">$0</b></div>
+
+<div class="big">
+<span>Tu 60%</span>
+<b id="mine">$0</b>
+</div>
+
+<div>
+<span>Otro 40%</span>
+<b id="other">$0</b>
+</div>
+
+</div>
+
+<button class="primary" id="save">
+✓ GUARDAR SERVICIO
+</button>
+
+</div>
+
+<div class="cards">
+
+<div class="stat">
+<small>Hoy</small>
+<b id="today">$0</b>
+</div>
+
+<div class="stat">
+<small>Tu 60% hoy</small>
+<b id="todayMine">$0</b>
+</div>
+
+<div class="stat">
+<small>Servicios</small>
+<b id="count">0</b>
+</div>
+
+<div class="stat">
+<small>Este mes</small>
+<b id="monthMine">$0</b>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="label">HISTORIAL RECIENTE</div>
+
+<div style="overflow:auto">
+
+<table>
+<thead>
+<tr>
+<th>Hora</th>
+<th>Código</th>
+<th>Servicio</th>
+<th>Total</th>
+<th>60%</th>
+</tr>
+</thead>
+
+<tbody id="history"></tbody>
+
+</table>
+
+</div>
+
+<button class="secondary" id="export">
+📤 EXPORTAR A EXCEL
+</button>
+
+<p class="note">
+Los registros se guardan en este teléfono.
+</p>
+
+</div>
+
+</main>
